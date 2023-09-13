@@ -1,10 +1,12 @@
 <app-menu></app-menu>
 
 <ion-content [fullscreen]="true">
- <h1></h1>
+ 
 
- <ion-card mode="ios">
-    <img alt="Silhouette of mountains" src="https://www.receiteria.com.br/wp-content/uploads/receitas-de-pao-low-carb-2.jpg" />
+ 
+
+ <ion-card (click)="card()">
+    <img alt="Silhouette of mountains" src="https://www.receiteria.com.br/wp-content/uploads/receitas-de-pao-low-carb-2.jpg" >
     <ion-card-header>
       <ion-card-title>Pão Lowcarb</ion-card-title>
     </ion-card-header>
@@ -15,7 +17,7 @@
   </ion-card>
 
   <ion-card mode="ios">
-    <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/card-media.png" />
+    <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/card-media.png" >
     <ion-card-header>
       <ion-card-title>Card Title</ion-card-title>
       
@@ -31,4 +33,4 @@
 
 </ion-content>
 
-<app-footer></app-footer>
+<!-- <app-footer></app-footer> -->
