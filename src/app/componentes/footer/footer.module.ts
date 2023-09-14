@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FooterComponent } from './footer.component';
 import { IonicModule } from '@ionic/angular';
+import { FooterRoutingModule } from './footer-routing.module';
 
 
 
@@ -10,7 +11,11 @@ import { IonicModule } from '@ionic/angular';
   exports: [FooterComponent],
   imports: [
     CommonModule,
-    IonicModule
+    IonicModule,
+    FooterRoutingModule
   ]
 })
-export class FooterModule { }
+export class FooterModule { 
+
+
+}

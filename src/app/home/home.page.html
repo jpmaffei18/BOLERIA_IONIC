@@ -1,21 +1,35 @@
 <app-menu></app-menu>
 
 <ion-content [fullscreen]="true">
- <h1></h1>
+ 
 
- <ion-card mode="ios">
-    <img alt="Silhouette of mountains" src="https://www.receiteria.com.br/wp-content/uploads/receitas-de-pao-low-carb-2.jpg" />
+ 
+
+ <ion-card>
+    <img alt="Silhouette of mountains" src="https://www.receiteria.com.br/wp-content/uploads/receitas-de-pao-low-carb-2.jpg" >
     <ion-card-header>
       <ion-card-title>Pão Lowcarb</ion-card-title>
     </ion-card-header>
   
     <ion-card-content>
-        O pão low carb é a opção perfeita para um café da manhã saboroso e nutritivo. 
+      Isso é um exemplo de texto que pode ser expandido. Clique no botão abaixo para saber mais.
     </ion-card-content>
+
+    <ion-button expand="full" (click)="toggleMoreText()" color="nothing" style="color:black; height:30px; width: 140px; font-size:12px; align-self: center; margin: 0 auto; box-shadow: none;">
+      {{ showMore ? 'Mostrar menos' : 'Saiba mais' }}
+    </ion-button>
+  
+      <ion-card-content *ngIf="showMore">
+        Aqui está mais texto que pode ser exibido quando você clica no botão "Saiba mais".
+      </ion-card-content>
+
   </ion-card>
+  
+
+
 
   <ion-card mode="ios">
-    <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/card-media.png" />
+    <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/card-media.png" >
     <ion-card-header>
       <ion-card-title>Card Title</ion-card-title>
       
@@ -31,4 +45,4 @@
 
 </ion-content>
 
-<app-footer></app-footer>
+<!-- <app-footer></app-footer> -->

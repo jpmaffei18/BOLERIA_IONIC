@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 
 
@@ -8,6 +9,11 @@ import { Component } from '@angular/core';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
-  
-  
+  showMore: boolean = false;
+
+  constructor(private router: Router){}
+
+  toggleMoreText() {
+    this.showMore = !this.showMore;
+  }
 }
